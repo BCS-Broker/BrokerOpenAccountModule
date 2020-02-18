@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'BrokerOpenAccountModule'
-  s.version          = '2.0.0'
+  s.version          = '2.0.1'
   s.summary          = 'BrokerSDK.BrokerOpenAccountModule'
   s.homepage         = 'https://github.com/BCS-Broker/BrokerOpenAccountModule'
   s.author           = 'BCS'
@@ -8,7 +8,8 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => "LICENSE" }
   s.platform     = :ios
   s.swift_versions = "5.0"
-  s.ios.deployment_target = '10.0'  
-  s.vendored_frameworks = 'BrokerOpenAccountModule.xcframework' 
-  s.dependency 'BrokerUIKit', '~> 2.0.4' 
+  s.ios.deployment_target = '11.0'  
+  s.vendored_frameworks = 'BrokerOpenAccountModule.framework' 
+  s.public_header_files = '*.framework/**/*.h'
+  s.source_files = '*.framework/**/*.h' 
 end
